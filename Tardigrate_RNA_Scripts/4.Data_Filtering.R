@@ -15,7 +15,7 @@ countData <- read.csv("genecount.csv", header=TRUE, row.names=1)
 # https://stackoverflow.com/questions/32618583/counting-number-of-instances-of-a-condition-per-row-r
 
 countData$missing_number <- rowSums(countData == 0)
-countData_missing_removed <- subset(countData, missing_number <= 9) # genes typed at least by 50% of the samples
+countData_missing_removed <- subset(countData, missing_number <= 9) # genes typed at least by 50% of the samples; relax the threshold if needed
 
 # delete the column
 countData_missing_removed$missing_number <- NULL
