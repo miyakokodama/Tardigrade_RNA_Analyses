@@ -32,5 +32,5 @@ salmon index -t Ro-001-Unigene.fa -i tardigrade_bgi_de_novo_index
 for SAMPLE in T_1 T_2  T_3  T_4  T_5  T_6  T_7  T_8  T_9  T_10  T_11  T_12  T_13  T_14  T_15  T_16  T_17  T_18
 do
     cd /groups/hologenomics/hmd579/data/Tardigrade_Analysis/Salmon # make this directory (or use name of your choice)
-    salmon quant -i tardigrade_bgi_de_novo_index -l A -1 /groups/hologenomics/hmd579/data/Tardigrade_Analysis/adapterremoval/$SAMPLE/*.pair1.truncated.gz -2 /groups/hologenomics/hmd579/data/Tardigrade_Analysis/adapterremoval/$SAMPLE/*.pair2.truncated.gz -p 10 -o $SAMPLE"_quants"
+    salmon quant -i /groups/hologenomics/hmd579/data/BGI_2019/Rv/Transcriptome_Denovo_Report.tar/Transcriptome_Denovo_Report/BGI_result/2.Assembly/Ro-001/tardigrade_bgi_de_novo_index -l A -1 /groups/hologenomics/hmd579/data/Tardigrade_Analysis/adapterremoval/$SAMPLE/*.pair1.truncated.gz -2 /groups/hologenomics/hmd579/data/Tardigrade_Analysis/adapterremoval/$SAMPLE/*.pair2.truncated.gz -p 2 -o $SAMPLE"_quants"
 done
