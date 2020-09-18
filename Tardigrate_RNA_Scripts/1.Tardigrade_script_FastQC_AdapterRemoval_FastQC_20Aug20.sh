@@ -23,9 +23,9 @@ do
 	echo $PrefixName
 
 # run FastQC on the CLEAN data
-	#mkdir -p $out_direc/fastqc_before/$PrefixName
-	#cd $raw_data/$PrefixName
-	#fastqc -t 2 $PrefixName"_1".fq.gz $PrefixName"_2".fq.gz -o $out_direc/2_fastqc_before/$PrefixName
+	mkdir -p $out_direc/fastqc_before/$PrefixName
+	cd $raw_data/$PrefixName
+	fastqc -t 2 $PrefixName"_1".fq.gz $PrefixName"_2".fq.gz -o $out_direc/2_fastqc_before/$PrefixName
 
 # run AdapterRemoval
 	mkdir -p $out_direc/adapterremoval/$PrefixName
@@ -33,10 +33,10 @@ do
 	AdapterRemoval --threads 2 --file1 $raw_data/$PrefixName/*_1.fq.gz --file2 $raw_data/$PrefixName/*_2.fq.gz --basename $PrefixName --trimns --trimqualities --minlength 25 --gzip --settings $PrefixName.settings
 
 # run FastQC on the CLEAN data
-	#mkdir -p $out_direc/fastqc_after/$PrefixName
-	#cd $out_direc/adapterremoval/$PrefixName
-	#file=`ls -a $PrefixName.pair*.gz | sort`
-	#fastqc $file -t 2 -o $out_direc/4_fastqc_after/$PrefixName
+	mkdir -p $out_direc/fastqc_after/$PrefixName
+	cd $out_direc/adapterremoval/$PrefixName
+	file=`ls -a $PrefixName.pair*.gz | sort`
+	fastqc $file -t 2 -o $out_direc/4_fastqc_after/$PrefixName
 
 done
 
