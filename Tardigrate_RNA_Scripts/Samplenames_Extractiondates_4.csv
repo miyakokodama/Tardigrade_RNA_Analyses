@@ -1,0 +1,19 @@
+NO,SampleID,Group,Experiment,Duration,Control,Group,Freeze,Thawing_Date,Extractor,Nr_Specimens,Extraction_Date,Concentration (ng/?l),Volume (?l),Total Mass (?g),RINe,28S/18S,Temperature (Celsius),Duration (h)
+1,T_1,Ctl,HeatShock,NA,E1_Control_Hs-Rep1,NA,NA,24/06/2020,Ricardo ,180,10/07/2020,18.7,27,0.5,8.7,1.4,NA,24
+2,T_2,Ctl,HeatShock,NA,E1_Control_Hs-Rep2,NA,NA,24/06/2020,Ricardo,102,14/07/2020,28.1,27,0.8,9.5,1.3,NA,24
+3,T_3,Ctl,HeatShock,NA,E1_Control_Hs-Rep3,NA,NA,05/05/2020,Ricardo,152,16/07/2020,25,27,0.7,9.6,1.4,NA,24
+4,T_4,Exp,HeatShock,NA,NA,E1_HeatShock-Rep1,NA,05/05/2020,Ricardo,154,30/06/2020,28.4,27,0.8,9.5,1.3,35,24
+5,T_5,Exp,HeatShock,NA,NA,E1_HeatShock-Rep2,NA,05/05/2020,Ricardo,180,02/07/2020,21.8,27,0.6,9,1.1,35,24
+6,T_6,Exp,HeatShock,NA,NA,E1_HeatShock-Rep3,NA,2020-05-05_06-24,Ricardo,176,07/07/2020,29,27,0.8,9.3,1.1,35,24
+7,T_7,Ctl,Freeze,2h,E2_Control_2h-Rep1,NA,NA,05/05/2020,Ask,280,12/07/2020,27.5,27,0.7,9.2,1.2,NA,2
+8,T_8,Ctl,Freeze,2h,E2_Control_2h-Rep2,NA,NA,05/05/2020,Ask,180,13/07/2020,26.8,24,0.6,9.5,1.3,NA,2
+9,T_9,Ctl,Freeze,2h,E2_Control_2h-Rep3,NA,NA,05/05/2020,Ask,164,15/07/2020,18.8,27,0.5,9.4,1.3,NA,2
+10,T_10,Exp,Freeze,2h,NA,NA,E2_Freeze_2h-Rep1,05/05/2020,Ask,180,07/07/2020,41.8,25,1,9.7,1.5,-80,2
+11,T_11,Exp,Freeze,2h,NA,NA,E2_Freeze_2h-Rep2,05/05/2020,Ask,180,09/07/2020,35.5,27,1,9.6,1.5,-80,2
+12,T_12,Exp,Freeze,2h,NA,NA,E2_Freeze_2h-Rep3,05/05/2020,Ask,180,10/07/2020,25.1,30,0.8,8.6,1.8,-80,2
+13,T_13,Ctl,Freeze,24h,E3_Control_24h-Rep1,NA,NA,05/05/2020,Ask,180,15/07/2020,33.6,27,0.9,9,1.1,NA,24
+14,T_14,Ctl,Freeze,24h,E3_Control_24h-Rep2,NA,NA,05/05/2020,Ask,180,15/07/2020,26.7,27,0.7,9.1,1.1,NA,24
+15,T_15,Ctl,Freeze,24h,E3_Control_24h-Rep3,NA,NA,05/05/2020,Ask,180,15/07/2020,30,27,0.8,9.2,1.2,NA,24
+16,T_16,Exp,Freeze,24h,NA,NA,E3_Freeze_24h-Rep1,05/05/2020,Ask,180,13/07/2020,25.3,27,0.7,9.1,1.1,-80,24
+17,T_17,Exp,Freeze,24h,NA,NA,E3_Freeze_24h-Rep2,05/05/2020,Ask,180,14/07/2020,22.3,25,0.6,8.8,1.1,-80,24
+18,T_18,Exp,Freeze,24h,NA,NA,E3_Freeze_24h-Rep3,05/05/2020,Ask,180,14/07/2020,16.9,25,0.4,9,1.1,-80,24
