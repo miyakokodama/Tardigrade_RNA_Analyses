@@ -11,3 +11,7 @@ paste genename T_1_quant.sf.tmp T_2_quant.sf.tmp T_3_quant.sf.tmp T_4_quant.sf.t
 ###########
 # convert a file to .csv
 cat genecount | tr -s '[:blank:]' ',' > genecount.csv
+
+# remove quant.sf (make it from "T_1_quant.sf" -> "T_1")
+# https://www.theunixschool.com/2014/08/sed-examples-remove-delete-chars-from-line-file.html
+sed 's/_quant.sf//' genecount.csv > genecount.csv
