@@ -102,9 +102,9 @@ countData[] <- lapply(countData, as.integer)
 # https://support.bioconductor.org/p/92941/
 
 colData$group <- factor(paste0(colData$Group, "_", colData$Duration))
-#dds <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design = ~ 0 + group) # don't do this, this is to compare one group to all other groups!
-dds <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design = ~ group)
-model.matrix(~ colData$group)
+dds <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design = ~ 0 + group)
+#dds <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design = ~ group) # since there is no "reference" in this case, above with "+0" is more straightforward (results are the same)
+#model.matrix(~ 0 + colData$group)
 #dds$group<-relevel(dds$group,ref="Ctl_24h")
 dds$group <- factor(dds$group, levels = c("Ctl_2h","Exp_2h","Ctl_24h","Exp_24h"))
 
@@ -158,7 +158,6 @@ results(dds, contrast=c("group","Exp_2h","Ctl_2h"))
 results(dds, contrast=c("group","Exp_24h","Ctl_24h"))
 results(dds, contrast=c("group","Ctl_2h","Ctl_24h"))
 results(dds, contrast=c("group","Exp_2h","Exp_24h"))
-
 
 ###
 
