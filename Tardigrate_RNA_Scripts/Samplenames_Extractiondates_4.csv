@@ -1,3 +1,5 @@
+# below is the metadata used to perform the DE analyses in tardigrades. 
+
 NO,SampleID,Group,Experiment,Duration,Control,Group,Freeze,Thawing_Date,Extractor,Nr_Specimens,Extraction_Date,Concentration (ng/?l),Volume (?l),Total Mass (?g),RINe,28S/18S,Temperature (Celsius),Duration (h)
 1,T_1,Ctl,HeatShock,NA,E1_Control_Hs-Rep1,NA,NA,24/06/2020,Ricardo ,180,10/07/2020,18.7,27,0.5,8.7,1.4,NA,24
 2,T_2,Ctl,HeatShock,NA,E1_Control_Hs-Rep2,NA,NA,24/06/2020,Ricardo,102,14/07/2020,28.1,27,0.8,9.5,1.3,NA,24
