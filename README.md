@@ -4,7 +4,7 @@ This is a collection of scripts that are used to perform differential expression
 ##  Tardigrade_RNA_Analyses
 In the Tardigrade_RNA_Analyses depository we have scripts to:
 
-• Perfome FastQC on "CLEAN" reads, 1) trimming using AdapterRemoval, 2) running FastQC on "CLEAN" and trimmed reads, 3) running MultiQC on before and after trimmed reads. 
+• Perfome 1) FastQC on "CLEAN" reads, 2) trim reads using AdapterRemoval, 3) run FastQC on "CLEAN" and trimmed reads, 3) run MultiQC on before and after trimmed reads. 
 
 • Run Salmon to estimate gene counts.
 
