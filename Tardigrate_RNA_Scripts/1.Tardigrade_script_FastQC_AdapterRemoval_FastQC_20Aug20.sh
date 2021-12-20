@@ -1,5 +1,4 @@
 module load java/v1.8.0_202-jdk
-#module load python/v3.5.2
 module load python/v2.7.17
 module load cutadapt/v2.6
 module load fastqc/v0.11.8
@@ -41,7 +40,7 @@ do
 done
 
 # run MultiQC on them
-	#multiqc $out_direc/2_fastqc_before/*/* --filename Tardigrade_BGI_20samples_multiqc_2_fastqc_before
+	multiqc $out_direc/2_fastqc_before/*/* --filename Tardigrade_BGI_20samples_multiqc_2_fastqc_before
 
 # run MultiQC on them
-	#multiqc $out_direc/4_fastqc_after/*/* --filename Tardigrade_BGI_20samples_multiqc_4_fastqc_after
+	multiqc $out_direc/4_fastqc_after/*/* --filename Tardigrade_BGI_20samples_multiqc_4_fastqc_after
