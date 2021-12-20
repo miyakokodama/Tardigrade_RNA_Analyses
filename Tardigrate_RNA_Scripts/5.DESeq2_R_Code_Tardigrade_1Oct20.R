@@ -1,3 +1,5 @@
+# R
+
 # remove anything before we start
 rm(list = ls())
 
@@ -24,7 +26,7 @@ library(statmod)
 library(DEFormats)
 
 # set the working directory
-setwd("\\\\a00519.science.domain/mch497/Documents/Tardigrade")
+setwd("")
 
 ############################
 ### load phenotypic data ###
