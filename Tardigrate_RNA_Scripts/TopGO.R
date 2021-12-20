@@ -1,6 +1,6 @@
-###############################################
+############################################
 # Enrichment analysis using topGO library
-# 
+############################################ 
 
 # Prepare annotation data
 # save BGI_result/3.Annotation/Ro-001-Unigene.fa.Gene2GO.xls as a csv file
