@@ -1,3 +1,5 @@
+# R
+
 rm(list = ls())
 
 ###
@@ -22,12 +24,12 @@ library(DEFormats)
 
 ############################
 
-setwd("\\\\a00519.science.domain/mch497/Documents/Tardigrade")
+setwd("")
 
-##############################################################################################
-### Start EdgeR                                                                            ###
-# NOTE: the following commands should be right after DESeq2, in order to use saved objects ###
-##############################################################################################
+##################################################################################################
+### Start EdgeR                                                                                ###
+# NOTE: the following commands should be performed after DESeq2, in order to use saved objects ###
+##################################################################################################
 
 ### on the whole countData ###
 x <- DGEList(counts=countData, group=colData$group)
