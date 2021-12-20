@@ -1,6 +1,5 @@
 ####################################
 # Summarise the results from the three DE methods
-#
 ####################################
 
 # R
