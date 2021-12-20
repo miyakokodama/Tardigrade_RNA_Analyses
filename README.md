@@ -15,3 +15,7 @@ In the Tardigrade_RNA_Analyses depository we have scripts to:
 • Perform DE analyses using DESeq2. 
 
 • Perform DE analyses using EdgeR and Limma. 
+
+• Summarize the results from DESeq2, EdgeR and Limma. 
+
+• Perform the GO enrichment analyses on the differentially expressed genes. 
