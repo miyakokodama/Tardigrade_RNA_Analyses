@@ -7,11 +7,11 @@
 # Read files
 # Here add the names of the cvs files where you have the results from each of the three methods used:
 m1<-read.csv("results_method1.csv")
-m2<-read.csv("results_method1.csv")
-m3<-read.csv("results_method1.csv")
+m2<-read.csv("results_method2.csv")
+m3<-read.csv("results_method3.csv")
 
 
-# read annotation files (these ones are attached in the email)
+# read annotation files:
 annotation_info1<-read.table("Ro-001-Unigene.fa.blast.swissprot.txt", as.is=T, sep="\t", h=T)
 annotation_info2<-read.table("Ro001UnigeneGene2GOedited", as.is=T, sep="\t")
 
@@ -62,7 +62,7 @@ for(i in 1:length(DE_genes)){
 		m3_p<-c(m3_p, NA)
 		m3_FDR<-c(m3_FDR, NA)
 	}
-	
+
 	if(sum(annotation_info1[,1]==DE_genes[i])>0){
 		temp<-annotation_info1[annotation_info1[,1]==DE_genes[i],2]
 		gene_id<-c(gene_id, temp[1])
@@ -74,7 +74,7 @@ for(i in 1:length(DE_genes)){
 	}
 	if(sum(annotation_info2[,1]==DE_genes[i])>0){
 		GO_id<-c(GO_id, annotation_info2[annotation_info2[,1]==DE_genes[i],2])
-	}	
+	}
 }
 
 tab<-cbind(DE_genes, m1_p, m1_FDR, m2_p, m2_FDR, m3_p, m3_FDR, gene_id, GO_id, descrip)
@@ -84,6 +84,3 @@ colnames(tab)<-c("Seq_id", "m1", "m1_FDR", "m2", "m2_FDR", "m3", "m3_FDR", "gene
 write.table(tab, quote=F, sep="\t", col.names=T, row.names=F, file="Summary_table.txt")
 
 ####################################
-
-
-

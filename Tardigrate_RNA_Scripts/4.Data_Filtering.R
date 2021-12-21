@@ -1,9 +1,9 @@
 # R
-
-rm(list = ls())
-
 # set a working directory
-setwd("")
+setwd("/groups/hologenomics/hmd579/data/Tardigrade_Analysis/Salmon/")
+
+# remove anything before we start
+rm(list = ls())
 
 #################################################################
 ### load count data or depth data (with or without row.names) ###

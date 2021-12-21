@@ -5,8 +5,12 @@
 
 library(ShortRead)
 
+args<-(commandArgs(TRUE))
+infile<-args[1]
+outfile<-args[2]
+
 # Assembly with the longest CLs and Unigenes
-faFile<-readFasta("Ro-001-Unigene.fa")
+faFile<-readFasta(infile)
 
 faUniGene<-faFile[grep("Unigene", as.character(id(faFile)))]
 faCL<-faFile[grep("CL", as.character(id(faFile)))]
@@ -27,6 +31,6 @@ keepids<-c(keepids, as.character(id(faUniGene)))
 
 newfa<-ShortRead(sread=DNAStringSet(keepseqs), id=BStringSet(keepids))
 
-writeFasta(newfa, "Ro-001-Unigene_uniqCLs.fa")
+writeFasta(newfa, outfile)
 
 ###############################################################
